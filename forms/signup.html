@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Signup Page</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #f4f6f8;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 500px;
+    }
+
+    .signup-form h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      color: #333;
+      font-weight: 500;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    input[type="radio"] {
+      width: auto;
+      margin-right: 8px;
+    }
+
+    .gender-options {
+      display: flex;
+      gap: 15px;
+      margin-top: 5px;
+    }
+
+    .form-group .gender-label {
+      font-weight: normal;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <form class="signup-form">
+      <h2>Create Account</h2>
+
+      <div class="form-group">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="Fname" placeholder="Enter your first name" required />
+      </div>
+
+      <div class="form-group">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="Lname" placeholder="Enter your last name" required />
+      </div>
+
+      <div class="form-group">
+        <label for="psd">Password</label>
+        <input type="password" id="psd" name="password" placeholder="Enter password" required />
+      </div>
+
+      <div class="form-group">
+        <label for="cpsd">Confirm Password</label>
+        <input type="password" id="cpsd" name="confirmPassword" placeholder="Confirm password" required />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="example@domain.com" required />
+      </div>
+
+      <div class="form-group">
+        <label for="number">Phone Number</label>
+        <input type="tel" id="number" name="number" placeholder="+91" required />
+      </div>
+
+      <div class="form-group">
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" name="dob" required />
+      </div>
+
+      <div class="form-group">
+        <label>Gender</label>
+        <div class="gender-options">
+          <label class="gender-label"><input type="radio" name="gender" value="male" required /> Male</label>
+          <label class="gender-label"><input type="radio" name="gender" value="female" /> Female</label>
+          <label class="gender-label"><input type="radio" name="gender" value="other" /> Other</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="city">City</label>
+        <select id="city" name="city" required>
+          <option value="">-- Select City --</option>
+          <option value="Hyderabad">Hyderabad</option>
+          <option value="Bangalore">Bangalore</option>
+          <option value="Pune">Pune</option>
+          <option value="Vizag">Vizag</option>
+          <option value="Chennai">Chennai</option>
+          <option value="Warangal">Warangal</option>
+        </select>
+      </div>
+
+      <button type="submit">Create Account</button>
+    </form>
+  </div>
+</body>
+</html>
