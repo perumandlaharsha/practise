@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign Up Form (Table)</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #e0f2ff, #ffffff);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    .form-container {
+      background: #fff;
+      padding: 30px 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      max-width: 500px;
+      width: 100%;
+    }
+
+    .form-container h2 {
+      text-align: center;
+      color: #003366;
+      margin-bottom: 25px;
+    }
+
+    table {
+      width: 100%;
+      border-spacing: 12px;
+    }
+
+    td {
+      padding: 8px 0;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 600;
+      color: #333;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    input[type="tel"] {
+      width: 100%;
+      padding: 10px;
+      font-size: 1em;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      transition: border-color 0.3s;
+    }
+
+    input:focus {
+      border-color: #007bff;
+      outline: none;
+      box-shadow: 0 0 0 3px rgba(0,123,255,0.1);
+    }
+
+    .gender-options {
+      display: flex;
+      gap: 15px;
+      margin-top: 5px;
+    }
+
+    .gender-options label {
+      font-weight: normal;
+      display: flex;
+      align-items: center;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 1em;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    @media (max-width: 500px) {
+      .form-container {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Sign Up Form</h2>
+    <form>
+      <table>
+        <tr>
+          <td>
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" placeholder="Enter your first name">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" placeholder="Enter your last name">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="password">Password</label>
+            <input type="password" id="psd" placeholder="Enter your password">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="cpassword">Confirm Password</label>
+            <input type="password" id="cpsd" placeholder="Confirm your password">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="phone">Phone No.</label>
+            <input type="tel" id="tel" placeholder="+91">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="email">Email ID</label>
+            <input type="email" id="email" placeholder="example@domain.com">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label>Gender</label>
+            <div class="gender-options">
+              <label><input type="radio" name="gender" value="male"> Male</label>
+              <label><input type="radio" name="gender" value="female"> Female</label>
+              <label><input type="radio" name="gender" value="others"> Others</label>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button type="submit">Create Account</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </div>
+</body>
+</html>
