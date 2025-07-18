@@ -3,9 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <style>
+       header{
+        color: white;
+        background-color: crimson;
+        border: 2px solid black;
+        text-align: center;
+        text-decoration:underline;
+       }
+       .types{
+        color: black;
+        background-color: gold;
+        border: 2px solid black;
+        text-align: start;
+       }
+       .defination{
+        color: black;
+        background-color: aquamarine;
+        border: 2px solid black;
+        text-align: justify;
+       }
+       #para{
+        color: aliceblue;
+        background-color: blue;
+        border: 2px solid black;
+        text-align: start;
+       }
+       img{
+        width: 400px;
+        border: 5px solid black;
+        
+       }
+       video{
+        width: 700px;
+        border: 5px solid black;
+       }
+       dt{
+        color:chocolate;
+        background-color: aliceblue;
+        text-align: start;
+       }
+       button{
+        text-align: center;
+        background-color:red;
+        color: white;
+        }
+        footer{
+            text-align: center;
+            color: darkgreen;
+            text-decoration: underline;
+        }
+        .hh{
+            background-color: chartreuse;
+            color:black;
+            text-decoration: underline;
+        }
+    </style>
+    <title>selectors</title>
 </head>
 <body>
-    
+    <header>Welcome To CSS - Selectors</header>
+    <p class="types"><b>Types os Selectors : </b><br>
+        1.Global/Universal Selector <br>
+        2.Tag/Element Selector <br>
+        3.Id selector <br>
+        4.Class Selector <br>
+        5.Attritube selector
+    </p>
+    <div class="defination">
+        <dl ><b>1.Global/Universal Selector:</b></dl>
+        <dt class="dt">global/universal selector is the form of selecting the entire data for the style,(*) is used to declare</dt>
+        <dl><b>2.Tag/Element Selector:</b></dl>
+        <dt class="dt">(Tag Name ) is used to declare the styles to it </dt>
+        <dl><b>3.Id Selector:</b></dl>
+        <dt class="dt">It is defined as the most effective selector,it uses (#) for declaring the style</dt>
+        <dl><b>4.Class Selector:</b></dl>
+        <dt class="dt">It uses (.) to declare the styles</dt>
+        <dl><b>5.Attribute Selector:</b></dl>
+        <dt class="dt">It uses ([]) for declaring the styles ex:[class="attribute name"</dt>
+    </div>
+
+    <h4 id="para">CSS is defined as cascading style sheets,it is used to add the style to the html code and css is used to design the webpage</h4>
+    <h3 class="hh">logo</h3>
+    <img src="../assets/ChatGPT Image Jul 16, 2025, 02_45_46 PM.png" alt="logo">
+    <h3 class="hh">Reference Video</h3>
+    <video controls src="../assets/video.mp4.mov">DEMO VIDEOS</video> <br>
+    <div style="display: flex;justify-content: center;">
+        <button>SUBMIT</button>
+    </div>
+<br>
+<footer><b>
+    All rights are reserved </b>
+</footer>
+
 </body>
 </html>
