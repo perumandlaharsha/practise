@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selectors</title>
+    <style>
+        .a:active{
+            color:chartreuse;
+            background-color:black;
+        }
+        #b:visited{
+            color:red;
+            background-color: black;
+        }
+        .c:hover{
+            color: rgb(235, 19, 191);
+            background-color:black;
+        }
+        li:first-child{
+            color: blueviolet;
+        }
+        li:last-child{
+            color: chartreuse;
+        }
+        li:nth-child(even){
+            color: darkblue;
+        }
+        #p1::before{
+            content: 'Hi ';
+            color: rgb(255, 2, 52);
+        }
+        #p1::after{
+            content: ' Types';
+            color:red;
+        }
+        #p1::first-letter{
+            color:gold;
+        }
+        #p4::first-line{
+
+            color:crimson;
+        }
+        input::placeholder{
+            color: chocolate;
+            font-style: italic;
+        }
+        section h1{
+            color: red;
+        }
+        section p{
+            color: blue;
+        }
+        h4+p{
+            color: limegreen;
+        }
+        h3~.dc{
+            color: aqua;
+        }
+        </style>
+</head>
+<body>
+    <h2>PSUEDO CLASS SELECTORS :</h2>
+    <h3>Active:</h3>
+    <button class="a">Hello</button>
+    <button class="a">welcome</button>
+    <button class="a">to</button>
+    <button class="a">CSS</button>
+    <br>
+    <br>
+    <h3>Visited:</h3>
+    <a href="#" id="b">Go To Page</a> <br>
+    <a href="#" id="b">New Page</a> <br>
+    <a href="#" id="b">Refresh Page</a> <br>
+    <a href="https://www.flipkart.com/viewcart?marketplace=FLIPKART" id="b">Cart page</a>
+    <br>
+    <br>
+    <h3>Hover:</h3>
+    <button class="c">Hello</button>
+    <button class="c">welcome</button>
+    <button class="c">to</button>
+    <button class="c">selectors</button>
+    <h3>first-child,last-child,nth-child:</h3>
+    <ul>
+        <li>abc</li>
+        <li>def</li>
+        <li>ghi</li>
+        <li>jkl</li>
+        <li>mno</li>
+        <li>pqr</li>
+        <li>stu</li>
+        <li>vwx</li>
+        <li>yz</li>
+    </ul>
+    <h2>PSUEDO ELEMENTS:</h2>
+    <h3>Before and After:</h3>
+    <p id="p1">Welcome to Psuedo Elements and</p>
+    <h3>First Line</h3>
+    <p id="p4">CSS selectors are used to "find" (or select) the HTML elements you want to style.We can divide CSS selectors into five categories:Simple selectors (select elements based on name, id, class)Combinator selectors (select elements based on a specific relationship between them)Pseudo-class selectors (select elements based on a certain state)Pseudo-elements selectors (select and style a part of an element)Attribute selectors (select elements based on an attribute or attribute value)</p>
+    <h3>Placeholder</h3>
+    <input type="text" placeholder="Enter Your Name">
+    <h2>RELATIONSHIP SELECTORS:</h2>
+    <h3>Desendent:</h3>
+    <section>
+        <h1>Son</h1>
+        <p>Daughter-in-law</p>
+        <div>
+            <h1>Grand son</h1>
+            <p>Grand Daughter</p>
+        </div>
+    </section>
+    <h3>Adjesent:</h3>
+    <h4>My House</h4>
+    <p>Neighbour 1</p>
+    <p>Neighbour 2</p>
+    <p>Neighbour 3</p>
+    <p>Neighbour 4</p>
+    <h3>Gendral Child:</h3>
+    <p class="dc">son</p>
+    <p class="dc">Daughter-in-law</p>
+    <p class="dc">Grandson</p>
+    <p class="dc">Granddaughter</p>
+     <h1>Son</h1>
+        <p>Daughter-in-law</p>
+        <div>
+            <h1>Grand son</h1>
+            <p>Grand Daughter</p>
+    
+</body>
+</html>
