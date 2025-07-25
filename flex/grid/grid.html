@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        header{
+            color: black;
+            background-color: burlywood;
+            border: 2px solid black;
+            margin-bottom: 20px;
+            justify-content: space-between;
+            height: 50px;
+            width: 1400ox;
+            display: flex;
+            position:sticky;
+            top: 10px;
+        }
+        ul li{
+            list-style: none;
+        }
+        .linkcontainer{
+            display: flex;
+            justify-content: space-evenly;
+            column-gap: 10px;
+
+        }
+        li a{
+            color: black;
+            text-decoration:underline;
+           
+        }
+        .products{
+            justify-content: center;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            background-color:whitesmoke;
+        }
+        .items{
+            height: 300px;
+            width: 300px;
+            border: 2px solid black;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            text-align: center;
+            justify-content: center;
+            align-content: center;
+            background-color: tomato;
+        }
+        footer{
+            border: 2px solid black;
+            margin-top: 20px;
+            display: flex;
+            background-color: rgb(215, 133, 11);
+            justify-content: space-around;
+            margin-bottom: 10px;
+        }
+        footer div{
+            display: flex;
+            justify-content: space-around;
+        }
+        #copy{
+            text-align: center;
+        }
+        button{
+            background-color: rgb(38, 182, 38);
+            color: black;
+            justify-content: center;
+            text-align: center;
+            align-content:center;
+        }
+        p{
+            font-style: italic;
+        }
+          
+    </style>
+</head>
+<body>
+    <header>
+        <h3>HIGHLANDER</h3>
+        <ul class="linkcontainer">
+        <li class="link"><a href="#">Home</a></li>
+        <li class="link"><a href="#">Products</a></li>
+        <li class="link"><a href="#">Wishlist</a></li>
+        <li class="link"><a href="#">Cart</a></li></ul>
+    </header>
+     <div class="products">
+        <div class="items">
+            <img src="https://www.snitch.co.in/cdn/shop/files/4MSK8686-01_3_a45cc412-ab84-4d6d-a815-cc86d41dee8d.jpg?v=1753095855" alt="" width="120px" height="150px">
+            <p>Star WithIn Reflective Printed Jacket</p>
+            <h5><del>5,999/-</del>  <ins>2,800/</ins></h5>
+            <button>Add to Cart</button>
+        </div>
+        <div class="items">
+            <img src="https://www.snitch.co.in/cdn/shop/files/4MSK8670-04_1_89f7711b-69dd-430b-8590-3e99110848c4.jpg?v=1751908250" alt="" width="120px" height="150px">
+            <p>Double Pocket Regular Fit Jacket</p>
+            <h5><del>5,999/-</del>  <ins>2,999/</ins></h5>
+            <button>Add to Cart</button>
+        </div>
+        <div class="items">
+            <img src="https://www.snitch.co.in/cdn/shop/files/4MSK8697-01-M12copy.jpg?v=1751454960" alt="" width="120px" height="150px">
+            <p>Double Pocket Denim Jacket</p>
+            <h5><del>3999/</del>  <ins>2,299/</ins></h5>
+             <button>Add to Cart</button>
+        </div>
+        <div class="items">
+            <img src="https://cdn.shopify.com/s/files/1/0420/7073/7058/files/1313e7db9c6498c068136463bc6767dc.webp?v=1724415791&quality=20" alt="" width="120px" height="150px">
+            <p>Navy Abstract Printed Shirt</p>
+            <h5> <del>1,999/</del>  <ins>999/</ins></h5>
+           <button>Add to Cart</button>
+        </div>
+        <div class="items">
+            <img src="https://cdn.shopify.com/s/files/1/0420/7073/7058/products/4MSS1813-01-M2598_c4e5af2e-0668-4269-afc7-0d8323eebce5.jpg?v=1682190399&quality=20" alt="" width="120px" height="150px">
+            <p>Double cuff white Shirt</p>
+            <h5><del>2,999/</del> <ins>999/</ins></h5>
+            <button>Add to Cart</button>
+        </div>
+        <div class="items">
+            <img src="https://cdn.shopify.com/s/files/1/0420/7073/7058/files/5f95751382c0caa32da47aceeedff190_f3575217-85c7-4e4e-8e35-3bbc70236343.webp?v=1716314880&quality=20" alt="" width="120px" height="150px">
+            <p>Stripehaven Light Blue Stripe Shirt</p>
+            <h5> <del>2,999/</del> <ins>1,199/</ins></h5>
+           <button>Add to Cart</button>
+        </div>
+        <div class="items">
+            <img src="https://cdn.shopify.com/s/files/1/0420/7073/7058/files/3a2365be06338b38469387644b409679.jpg?v=1731388602&quality=20" alt="" width="120px" height="150px">
+            <p>Olive Solid Twill Shirt</p>
+            <h5><del>2,999/</del> <ins>1,299/</ins></h5>
+            <button>Add to Cart</button>
+        </div>
+        <div class="items">
+            <img src="https://cdn.shopify.com/s/files/1/0420/7073/7058/files/4MSS4138-01-M16copy.jpg?v=1751887392&quality=20" alt="" width="120px" height="150px">
+            <p>Abstract Regular Fit Shirt</p>
+            <h5><del>1,999/</del> <ins>999/</ins></h5>
+           <button>Add to Cart</button>
+        </div>
+    </div>
+    <footer>
+        <h3>HIGHLANDER</h3>
+        <div>
+        <ul>
+            <li>About Us</li>
+            <li><address>India's No.1 Clothing Company</address></li>
+  </ul>
+  <ul>
+    <li>Contact us</li>
+    <li><input type="email" placeholder="example@gmail.com"></li>
+    <li><button>Submit</button></li>
+  </ul>
+</div>
+</footer>
+    <div id="copy">&copy;All rights are reserved to HIGHLANDER</div>
+</body>
+</html>
