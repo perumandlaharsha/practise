@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipcard</title>
+    <style>
+        .front{
+            color: white;
+            background-color: blue;
+        }
+        .back{
+            color: white;
+            background-color: green;
+            transform: rotateY(180deg);
+        }
+        .Cardcontainer{
+            width: 300px;
+            height: 350px;
+            perspective: 1000px;
+        }
+        .flipcard{
+            
+            width: 100%;
+            height: 100%;
+            transition: all 0.8s ease;
+            transform-style: preserve-3d;
+        }
+        .cardface{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            backface-visibility: hidden;
+            text-align: center;
+            align-content: center;
+            border-radius: 15px;
+        }
+        .Cardcontainer:hover .flipcard{
+            transform: rotateY(180deg);
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .main{
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            position: relative;
+            top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flip Card</h1>
+    <div class="main">
+    <div class="Cardcontainer">
+        <div class="flipcard">
+            <div class="cardface front">Front</div>
+            <div class="cardface back">Back</div>
+        </div>
+    </div>
+    <div class="Cardcontainer">
+        <div class="flipcard">
+            <div class="cardface front">Front</div>
+            <div class="cardface back">Back</div>
+        </div>
+    </div>
+    <div class="Cardcontainer">
+        <div class="flipcard">
+            <div class="cardface front">Front</div>
+            <div class="cardface back">Back</div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

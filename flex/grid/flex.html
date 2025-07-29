@@ -18,7 +18,7 @@
             border-radius: 8px;
             text-align: center;
             align-content: center;
-            margin-top: 12px;
+            margin-top: 50px;
         }
         .flexcontainer{
             display:flex;
@@ -32,11 +32,11 @@
             display: flex;
             justify-content:space-between;
             border: 2px solid black;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
             background-color:tomato;
             text-align: center;
-            position:fixed;
-            top: 5px;
+            position:sticky;
+            top: 10px;
             height: 50px;
             width:1240px;
 
@@ -69,6 +69,9 @@
         #copy{
             text-align: center;
         }
+        button{
+            border-radius: 5px;
+        }
         button:hover{
             background-color: rgb(38, 182, 38);
             color: black;
@@ -81,9 +84,59 @@
         }
         .banner{
             border:5px solid brown;
-            margin-top: 60px;
             height: 200px;
             width: 1240px;
+        }
+        .contact{
+            color:white;
+            background-color: blue;
+            position: fixed;
+            right: 5px;
+            top: 380px;
+            transform: rotate(90deg);
+            border: 2px solid black;
+        }
+         .front{
+            color: black;
+            background-color:rgb(184, 184, 74);
+        }
+        .back{
+            color: white;
+            background-color:rgb(206, 0, 0);
+            transform: rotateY(180deg);
+        }
+        .Cardcontainer{
+            width: 300px;
+            height: 350px;
+            perspective: 1000px;
+        }
+        .flipcard{
+            
+            width: 100%;
+            height: 100%;
+            transition: all 0.8s ease;
+            transform-style: preserve-3d;
+            border: 2px solid black;
+            border-radius: 15px;
+        }
+        .cardface{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            backface-visibility: hidden;
+            text-align: center;
+            align-content: center;
+            border-radius: 15px;
+        }
+        .Cardcontainer:hover .flipcard{
+            transform: rotateY(180deg);
+        }
+        .main{
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            position:relative;
+            top: 10px;
         }
     </style>
 </head>
@@ -91,15 +144,36 @@
     <header>
         <h3>SNITCH</h3>
         <ul class="linkcontainer">
-            <li class="link"><a href="#">Home</a></li>
-            <li class="link"><a href="#">Product</a></li>
-            <li class="link"><a href="#">About</a></li>
-            <li class="link"><a href="#">Cart</a><i class="fa-solid fa-cart-shopping"></i><span style="width: 10px;height: 2px;border-radius: 90%;background-color: white;color: green;position: relative;right:12px;padding:1px;bottom:15px;">3</span></li>
+            <li class="link"><a href="#">Profile</a><i class="fa-solid fa-user"></i></li>
+            <li class="link"><a href="#">Search</a><i class="fa-solid fa-magnifying-glass"></i></i></li>
+            <li class="link"><a href="#">Wishlist</a><i class="fa-solid fa-heart"></i></li>
+            <li class="link"><a href="#">Cart</a><i class="fa-solid fa-cart-shopping"></i><span style="width: 10px;height: 2px;border-radius: 90%;background-color:green;color:white;position: relative;right:12px;padding:1px;bottom:15px;">3</span></li>
         </ul>
     </header>
     <div class="banner">
-        <img style="width: 1240px;height: 200px;" src="https://tse4.mm.bing.net/th/id/OIP.g7UT8L3EHLHhU_aFSKNODAHaEK?r=0&w=1920&h=1080&rs=1&pid=ImgDetMain&o=7&rm=3" alt="banner" >
+        <img style="width: 1240px;height: 200px;" src="https://couponswala.com/blog/wp-content/uploads/2023/01/Snitch-Mens-Clothing-Brand-696x392.jpg" alt="banner" >
     </div>
+    <div class="main">
+    <div class="Cardcontainer">
+        <div class="flipcard">
+            <div class="cardface front"><img style="width: 300px;height: 350px;border-radius: 15px;" src="https://th.bing.com/th/id/R.46ae210a4e7b267db7c5466fe50f1ad6?rik=cimiuirqGZOLBg&riu=http%3a%2f%2frhcwesternwear.com%2fcdn%2fshop%2fcollections%2fc54e50cd-4226-4509-89b8-3b954d08bb8a.jpg%3fv%3d1719867598&ehk=cjyAo%2fUvOmF94NYmBhmzQIkBABLPnJLGCxn5ezVlDEU%3d&risl=&pid=ImgRaw&r=0" alt=""></div>
+            <div class="cardface back">Regular Fit Shirts- <a style="color: black;" href="#">Go</a> <br>Cargo Jeans-<a style="color: black;" href="#">Go</a> <br> Solid & Printed Hoddies-<a style="color: black;" href="#">Go</a> </div>
+        </div>
+    </div>
+    <div class="Cardcontainer">
+        <div class="flipcard">
+            <div class="cardface front"><img style="width: 300px;height: 350px;border-radius: 15px;" src="https://infashionbusiness.com/admin_assets/images/products/infashion-1704782766.jpeg" alt=""></div>
+            <div class="cardface back">Hyderabad-<button>Location</button> <br> Vizag-<button>Location</button> <br> Bangalore-<button>Location</button></div>
+        </div>
+    </div>
+    <div class="Cardcontainer">
+        <div class="flipcard">
+            <div class="cardface front"><img style="width: 300px;height: 350px;border-radius: 15px;" src="https://st5.depositphotos.com/79030344/67354/v/450/depositphotos_673543070-stock-illustration-megaphone-new-update-banner-template.jpg" alt=""></div>
+            <div class="cardface back">Instagram- <button>View Profile</button></div>
+        </div>
+    </div>
+    </div>
+    <div class="contact"> Contact Us </div>
     <div class="flexcontainer">
         <div class="items">
             <img src="https://www.snitch.co.in/cdn/shop/files/4MSK8686-01_3_a45cc412-ab84-4d6d-a815-cc86d41dee8d.jpg?v=1753095855" alt="" width="120px" height="150px">
@@ -159,8 +233,8 @@
         </ul>
         <ul>
             <li>Contact Us</li>
-            <li><input type="email" placeholder="exapmle@gmail.com"></li>
-            <li><button>Submit</button></li>
+            <li><input style="border-radius: 5px;" type="email" placeholder="exapmle@gmail.com"></li>
+            <li><button style="border-radius: 5px;">Submit</button></li>
         </ul>
     </div>
     </footer>
