@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Invitation</title>
+  <style>
+    /* Background Animation */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+      background: linear-gradient(270deg, #f09308, #dddcff, #17ea4f);
+      background-size: 600% 600%;
+      animation: gradientBG 10s ease infinite;
+    }
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* Glassmorphism Card */
+    .invitation-card {
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 20px;
+      padding: 30px;
+      width: 350px;
+      text-align: center;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+      color: white;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Text Styling */
+    .invitation-card h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+    .invitation-card h2 {
+      font-size: 1.5rem;
+      color: #ffeaa7;
+      margin-bottom: 15px;
+    }
+    .invitation-card p {
+      margin: 8px 0;
+      font-size: 1rem;
+    }
+
+    /* RSVP Button */
+    .rsvp-btn {
+      display: inline-block;
+      padding: 12px 20px;
+      margin-top: 20px;
+      background: linear-gradient(45deg, #ff9ff3, #feca57);
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 30px;
+      transition: 0.3s;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+    }
+    .rsvp-btn:hover {
+      box-shadow: 0 0 20px #ff9ff3, 0 0 30px #feca57;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <div class="invitation-card">
+    <h1>You're Invited! 🎉</h1>
+    <h2>INDEPENDENCE DAY CELEBRATIONS</h2>
+    <p class="date">📅 15th August 2025</p>
+    <p class="time">⏰ 9:00 AM Onwards</p>
+    <p class="venue">📍 ACHIEVERSIT,HYD</p>
+    <p class="description">
+      Join us for an wonderful CELEBRATIONS filled with music, dance, and amazing memories.
+    </p>
+    <a href="#" class="rsvp-btn">JOIN Now</a>
+  </div>
+</body>
+</html>
